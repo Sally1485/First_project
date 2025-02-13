@@ -41,22 +41,28 @@
         </nav>
     </header>
     <main>
-        <div class="container_1"></div>
-        <section>
-        <h2>We boost growth in your startup business</h2>
-        <p>Our goal is top at the heart of creativity services industry as a digital creator. In as a after the comment</p>
-        <button>Get Started</button>
-        <button>Learn more</button>
+        <!-- so because of semantic HTMl, the hero section must be one section like below -->
+    <section class="hero pad-horizontal">
+        <!-- remember to use a div to separe -->
+        <div class="hero-text">
+            <h2>We boost growth in your startup business</h2>
+            <p>Our goal is top at the heart of creativity services industry as a digital creator. In as a after the comment</p>
+            <!-- use <span> tag to separate content inside a div (can also be a div)  -->
+            <span class="hero-btn-container">
+                <button class="orangeBtn">Get Started</button>
+                <!-- when a 'button' has an icon beside it, you can use a span to mimic a button or still use the button tag like a container -->
+                <span class="learn-more-btn">
+                    <img src="/assets/learn-more.png" alt="learn">
+                    <span>Learn More</span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <img src="/assets/hero-image.png" alt="">
+        </div>
     </section>
-</div>
-<div class="container_2">
-    <section>
-        <img src="Images/Agency Landing Page (Community).zip" alt="image icon">
-        <h3>100% business growth</h3>
-    </section>
-</div>
-
-
+        <!-- Hero section ends here -->
+<!-- </div>
     <section>
         <div class="head_1">
         <h5>SERVICE</h5>
@@ -64,22 +70,19 @@
     </div>
         <div class="container_3">
         <div>
-        <img src="Images/Agency Landing Page (Community).zip" alt="image icon">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo incidunt quas nisi non ut totam quae blanditiis facilis delectus soluta officiis fugit voluptatum aut ullam error, voluptatibus doloribus natus laudantium.</p>
         <button>Learn more</button>
         </div>
     <div>
-        <img src="Images/Agency Landing Page (Community).zip" alt="video icon">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nisi est numquam ex repellendus, consequuntur voluptas atque nihil? Corporis dolore sapiente repellendus ad, quidem impedit. Labore hic totam fugiat illo.</p>
         <button>Learn more</button>
     </div>
     <div>
-        <img src="Images/Agency Landing Page (Community)(7).zip" alt="chart icon">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit deleniti quasi repudiandae veniam sunt hic reprehenderit doloribus asperiores eos nesciunt rem ipsa veritatis amet possimus recusandae, distinctio minima commodi dolor?</p>
         <button>Learn more</button>
     </div>
     </section>
-</div>
+</div> -->
     </main>
 
     <script src="/script.js"></script>
