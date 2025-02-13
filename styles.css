@@ -12,6 +12,19 @@
     font-family: Poppins, sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+/* utilities */
+.orangeBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--tertiary);
+    color: #fff;
+}
+
 /* navigation bar */
 header > nav {
     display: flex;
@@ -23,7 +36,6 @@ header > nav {
 nav > ul.links {
     align-items: center;
     gap: 2.5em;
-    list-style-type: none;
 }
 
 ul > li > a {
@@ -36,17 +48,42 @@ nav > .buttons {
     gap: 1.2em;
 }
 
-.buttons > button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--tertiary);
-    color: #fff;
+/* mobile navigation */
+.menu {
+    display: block;
 }
 
-/* mobile navigation */
-.menu, .mobile {
-    display: none;
+.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.5em;
+}
+
+.mobile-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.mobile .close-btn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
 }
 
 .menu {
