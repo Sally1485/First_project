@@ -122,3 +122,47 @@ nav > .buttons {
 .view {
     visibility: visible;
 }
+
+.container_1 {
+    padding: 20px;
+    display: flex;
+    flex-direction: row; right: 30%;
+    justify-content: start;
+    
+}
+/*Don't get how to do this one*/
+.container_2{
+    padding: 20px;
+    display: flex;
+    flex-direction: row; right: 30%;
+    background-image: url(Images/joyful-guy-texting-message-smartphone2\ 1.png);
+    margin-left: 15%;
+    justify-content: flex-end;
+}
+.head_1{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.container_3{
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    justify-content: space-between;
+    text-wrap: 2px;
+    line-height: 28.5px;
+}
+button{
+    background-color: #FF6600;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+     width: 162px;
+     height: 49px;
+}
+
+button:hover{
+    background-color: crimson;
+}
