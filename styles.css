@@ -12,11 +12,6 @@
     font-family: Poppins, sans-serif;
 }
 
-/* utilities */
-.pad-horizontal {
-    padding-inline: 350px;
-} 
-
 /* navigation bar */
 header > nav {
     display: flex;
@@ -25,8 +20,7 @@ header > nav {
     padding-block: 50px;
 }
 
-nav > ul {
-    display: flex;
+nav > ul.links {
     align-items: center;
     gap: 2.5em;
     list-style-type: none;
@@ -38,7 +32,6 @@ ul > li > a {
 }
 
 nav > .buttons {
-    display: flex;
     align-items: center;
     gap: 1.2em;
 }
@@ -49,4 +42,37 @@ nav > .buttons {
     border: none;
     background-color: var(--tertiary);
     color: #fff;
+}
+
+/* mobile navigation */
+.menu, .mobile {
+    display: none;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1300px) {
+    .menu {
+        display: block;
+    }
+    .links, .buttons     {
+        display: none;
+    }
+    .pad-horizontal {
+        padding-inline: 50px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .menu {
+        display: none;
+    }
+    .links, .buttons     {
+        display: flex;
+    }
+    .pad-horizontal {
+        padding-inline: 200px;
+    }
 }
