@@ -101,6 +101,16 @@ nav > .buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hero .hero-text, .hero .hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
 }
 
 .hero .hero-text {
@@ -152,6 +162,36 @@ nav > .buttons {
     }
     .pad-horizontal {
         padding-inline: 200px;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .hero .hero-text h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero .hero-text h2 {
+        font-size: 32px;
+    }
+    .hero .hero-text p {
+        font-size: 16px;
+    }
+    .logo img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text {
+        order: 1;
+    }
+    .hero-image {
+        order: 0;
     }
 }
 
