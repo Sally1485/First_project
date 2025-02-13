@@ -54,6 +54,7 @@ nav > .buttons {
 }
 
 .mobile {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,18 +73,21 @@ nav > .buttons {
     flex-direction: column;
     align-items: start;
     gap: 2.5em;
+    cursor: pointer;
 }
 
 .mobile-buttons {
     display: flex;
     align-items: center;
     gap: 1.5em;
+    cursor: pointer;
 }
 
 .mobile .close-btn {
     position: absolute;
     top: 40px;
     right: 20px;
+    cursor: pointer;
 }
 
 .menu {
@@ -112,4 +116,9 @@ nav > .buttons {
     .pad-horizontal {
         padding-inline: 200px;
     }
+}
+
+
+.view {
+    visibility: visible;
 }
